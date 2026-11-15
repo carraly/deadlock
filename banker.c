@@ -184,7 +184,7 @@ int parse_command(const char *line, char *op, int *cust, int *vals) {
     return 0;
 }
 
-static void validate_commands(const char *path) {
+void validate_commands(const char *path) {
     FILE *f = fopen(path, "r");
     if(!f) {
         perror("unable to open commands.txt");
@@ -210,7 +210,120 @@ static void validate_commands(const char *path) {
             perror(msg);
         }
     }
-    if (count == 0) perror("commands.txt esta vazio");
+    if (count == 0) perror("commands.txt is empty");
+
+    free(vals);
+    fclose(f);
+}
+
+void print_vec(FILE *out, const int *v) {
+    for (int j = 0; j < n_resources; j++) {
+        fprintf(out, j ? " %d" : "%d", v[j]);
+    }
+}
+
+// Retorna 1 se existir alguma posição j com a[j] > b[j]
+int any_greater(const int *a, const int *b) {
+    for(int j = 0; j < n_resources; j++) {
+        if (a[j] > b[j]) {
+            return 1;
+        }
+    }
+    return 0;
+}
+
+int is_safe(void) {
+    int *work = alloc_vec(n_resources);
+    int *finish = alloc_vec(n_customers);
+
+    for(int j = 0; j < n_resources; j++) {
+        work[j] = available[j];
+    }
+    int progress = 1;
+    while(progress) {
+        progress = 0;
+        for(int i = 0; i < n_customers; i++) {
+            if(!finish[i] && !any_greater(need[i], work)) {
+                for(int j = 0; j < n_resources; j++) {
+                    work[j] += allocation[i][j];
+                }
+                finish[i] = 1;
+                progress = 1;
+            }
+        }
+    }
+
+    int safe = 1;
+    for(int i = 0; i < n_customers; i++) {
+        if (!finish[i]) safe = 0;
+    }
+    free(work);
+    free(finish);
+    return safe;
+}
+
+void request_resources(int i, int *req, FILE *out) {
+    if (any_greater(req, need[i])) {
+        fprintf(out, "The customer %d request ", i);
+        print_vec(out, req);
+        fprintf(out, " was denied because exceed its maximum allocation\n");
+        return;
+    }
+
+    if (any_greater(req, available)) {
+        fprintf(out, "The resources ");
+        print_vec(out, available);
+        fprintf(out, " are not enough to customer %d request ", i);
+        print_vec(out, req);
+        fprintf(out, " \n");
+        return;
+    }
+
+    for (int j = 0; j < n_resources; j++) {
+        available[j]     -= req[j];
+        allocation[i][j] += req[j];
+        need[i][j]       -= req[j];
+    }
+
+    if (is_safe()) {
+        fprintf(out, "Allocate to customer %d the resources ", i);
+        print_vec(out, req);
+        fprintf(out, "\n");
+    } else {
+        for (int j = 0; j < n_resources; j++) {
+            available[j]     += req[j];
+            allocation[i][j] -= req[j];
+            need[i][j]       += req[j];
+        }
+        fprintf(out, "The customer %d request ", i);
+        print_vec(out, req);
+        fprintf(out, " was denied because result in an unsafe state\n");
+    }
+}
+
+void run_commands(const char *path, FILE *out) {
+    FILE *f = fopen(path, "r");
+    if(!f) {
+        perror("unable to open commands.txt");
+    }
+
+    char line[1024];
+    int *vals = alloc_vec(n_resources);
+    char op;
+    int cust;
+
+    while(fgets(line, sizeof line, f)) {
+        if(parse_command(line, &op, &cust, vals) != 0)
+            perror("commands.txt has invalid format");
+
+        if(op == 'Q') {
+            request_resources(cust, vals, out);
+        }else if (op == 'L') {
+            release_resources(cust, vals, out);
+        }else{
+            print_state(out);
+        }
+    }
 
     free(vals);
     fclose(f);
