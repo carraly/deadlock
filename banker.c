@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <errno.h>
+#include <limits.h>
 
 int n_customers = 0;
 int n_resources = 0;
@@ -28,13 +30,19 @@ void parse_args(int argc, char *argv[]) {
 
     for(int j = 0; j < n_resources; j++) {
         char *end;
+        errno = 0;
         long v = strtol(argv[j + 1], &end, 10);
 
         /* vazio, lixo no final (ex.: "5x"), overflow, negativo */
-        if (end == argv[j + 1] || *end != '\0')
+        if(end == argv[j + 1] || *end != '\0') {
             perror("expected a number");
-        if (v < 0)
+        }
+        if(errno == ERANGE || v > INT_MAX) {
+            perror("argument is too big");
+        }
+        if(v < 0) {
             perror("expected a non-negative number");
+        }
 
         available[j] = (int)v;
     }
