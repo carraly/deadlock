@@ -301,6 +301,25 @@ void request_resources(int i, int *req, FILE *out) {
     }
 }
 
+void release_resources(int i, int *rel, FILE *out) {
+    if (any_greater(rel, allocation[i])) {
+        fprintf(out, "The customer %d release ", i);
+        print_vec(out, rel);
+        fprintf(out, " was denied because exceed its allocation\n");
+        return;
+    }
+
+    for (int j = 0; j < n_resources; j++) {
+        available[j]     += rel[j];
+        allocation[i][j] -= rel[j];
+        need[i][j]       += rel[j];
+    }
+
+    fprintf(out, "Release from customer %d the resources ", i);
+    print_vec(out, rel);
+    fprintf(out, "\n");
+}
+
 void run_commands(const char *path, FILE *out) {
     FILE *f = fopen(path, "r");
     if(!f) {
