@@ -263,14 +263,14 @@ int is_safe(void) {
 }
 
 void request_resources(int i, int *req, FILE *out) {
-    if (any_greater(req, need[i])) {
+    if(any_greater(req, need[i])) {
         fprintf(out, "The customer %d request ", i);
         print_vec(out, req);
         fprintf(out, " was denied because exceed its maximum allocation\n");
         return;
     }
 
-    if (any_greater(req, available)) {
+    if(any_greater(req, available)) {
         fprintf(out, "The resources ");
         print_vec(out, available);
         fprintf(out, " are not enough to customer %d request ", i);
@@ -279,18 +279,18 @@ void request_resources(int i, int *req, FILE *out) {
         return;
     }
 
-    for (int j = 0; j < n_resources; j++) {
+    for(int j = 0; j < n_resources; j++) {
         available[j]     -= req[j];
         allocation[i][j] += req[j];
         need[i][j]       -= req[j];
     }
 
-    if (is_safe()) {
+    if(is_safe()) {
         fprintf(out, "Allocate to customer %d the resources ", i);
         print_vec(out, req);
         fprintf(out, "\n");
-    } else {
-        for (int j = 0; j < n_resources; j++) {
+    }else {
+        for(int j = 0; j < n_resources; j++) {
             available[j]     += req[j];
             allocation[i][j] -= req[j];
             need[i][j]       += req[j];
@@ -302,14 +302,14 @@ void request_resources(int i, int *req, FILE *out) {
 }
 
 void release_resources(int i, int *rel, FILE *out) {
-    if (any_greater(rel, allocation[i])) {
+    if(any_greater(rel, allocation[i])) {
         fprintf(out, "The customer %d release ", i);
         print_vec(out, rel);
         fprintf(out, " was denied because exceed its allocation\n");
         return;
     }
 
-    for (int j = 0; j < n_resources; j++) {
+    for(int j = 0; j < n_resources; j++) {
         available[j]     += rel[j];
         allocation[i][j] -= rel[j];
         need[i][j]       += rel[j];
@@ -318,6 +318,52 @@ void release_resources(int i, int *rel, FILE *out) {
     fprintf(out, "Release from customer %d the resources ", i);
     print_vec(out, rel);
     fprintf(out, "\n");
+}
+
+int vec_to_str(char *buf, size_t cap, const int *v) {
+    int pos = 0;
+    buf[0] = '\0';
+    for(int j = 0; j < n_resources; j++) {
+        pos += snprintf(buf + pos, cap - pos, "%d ", v[j]);
+    }
+    return pos;
+}
+
+static void print_state(FILE *out) {
+    size_t cap = (size_t)n_resources * 12 + 1;
+    char *a = malloc(cap);
+    char *b = malloc(cap);
+    char *c = malloc(cap);
+    if (!a || !b || !c) {
+        perror("failed allocating memory");
+    }
+
+    int w1 = 10, w2 = 12;
+    for(int i = 0; i < n_customers; i++) {
+        int l1 = vec_to_str(a, cap, maximum[i]) + 4;
+        int l2 = vec_to_str(b, cap, allocation[i]) + 6;
+        if (l1 > w1) {
+            w1 = l1;
+        }
+        if (l2 > w2) {
+            w2 = l2;
+        }
+    }
+
+    fprintf(out, "%-*s|   %-*s|   NEED\n", w1, "MAXIMUM", w2, "ALLOCATION");
+    for(int i = 0; i < n_customers; i++) {
+        vec_to_str(a, cap, maximum[i]);
+        vec_to_str(b, cap, allocation[i]);
+        vec_to_str(c, cap, need[i]);
+        fprintf(out, "%-*s|   %-*s|   %s\n", w1, a, w2, b, c);
+    }
+
+    vec_to_str(a, cap, available);
+    fprintf(out, "AVAILABLE %s\n", a);
+
+    free(a);
+    free(b);
+    free(c);
 }
 
 void run_commands(const char *path, FILE *out) {
