@@ -12,7 +12,7 @@ int **maximum;
 int **allocation;
 int **need;
 
-static int *alloc_vec(int m) {
+int *alloc_vec(int m) {
     int *v = calloc(m, sizeof(int));
     if(!v) {
         perror("failed allocating memory");
@@ -109,7 +109,7 @@ void load_customers(const char *path) {
             perror(msg);
         }
     }
-    if (count == 0) perror("customer.txt esta vazio");
+    if (count == 0) perror("customer.txt is empty");
 
     n_customers = count;
     maximum    = alloc_mat(n_customers, n_resources);
@@ -124,6 +124,95 @@ void load_customers(const char *path) {
     }
 
     free(tmp);
+    fclose(f);
+}
+
+int parse_int(const char *s, int *out) {
+    char *end;
+    errno = 0;
+    long v = strtol(s, &end, 10);
+    if (end == s || *end != '\0' || errno == ERANGE || v < 0 || v > INT_MAX) {
+        return -1;
+    }
+    *out = (int)v;
+    return 0;
+}
+
+int parse_command(const char *line, char *op, int *cust, int *vals) {
+    const char *sep = " \t\r\n";
+    char buf[1024];
+    snprintf(buf, sizeof buf, "%s", line);
+
+    char *tok = strtok(buf, sep);
+    if(!tok) {
+        return -1;
+    }
+
+    if (strcmp(tok, "*") == 0) {
+        *op = '*';
+        if (strtok(NULL, sep) != NULL) {
+            return -1;
+        }
+        return 0;
+    }
+
+    if(strcmp(tok, "RQ") == 0) {
+        *op = 'Q';
+    }
+    else if(strcmp(tok, "RL") == 0) {
+        *op = 'L';
+    }
+    else {
+        return -1;
+    }
+
+    tok = strtok(NULL, sep);
+    if(!tok || parse_int(tok, cust) != 0 || *cust >= n_customers) {
+        return -1;
+    }
+
+    for(int j = 0; j < n_resources; j++) {
+        tok = strtok(NULL, sep);
+        if(!tok || parse_int(tok, &vals[j]) != 0) {
+            return -1;
+        }
+    }
+
+    if (strtok(NULL, sep) != NULL) {
+        return -1;
+    }
+    return 0;
+}
+
+static void validate_commands(const char *path) {
+    FILE *f = fopen(path, "r");
+    if(!f) {
+        perror("unable to open commands.txt");
+    }
+
+    char line[1024];
+    char msg[160];
+    int *vals = alloc_vec(n_resources);
+    char op;
+    int cust;
+    int count = 0;
+
+    while (fgets(line, sizeof line, f)) {
+        count++;
+        if (!strchr(line, '\n') && !feof(f)) {
+            snprintf(msg, sizeof msg, "commands.txt: line %d is too long", count);
+            perror(msg);
+        }
+        if (parse_command(line, &op, &cust, vals) != 0) {
+            snprintf(msg, sizeof msg,
+                     "commands.txt: line %d is invalid (expected: RQ|RL <cliente 0..%d> + %d values, or *)",
+                     count, n_customers - 1, n_resources);
+            perror(msg);
+        }
+    }
+    if (count == 0) perror("commands.txt esta vazio");
+
+    free(vals);
     fclose(f);
 }
 
