@@ -1,7 +1,7 @@
-CFLAGS = -Wall -g
+CFLAGS = -Wall -Wextra -g
 
 banker: banker.o
-	gcc $(CFLAGS) -o sync_car $^
+	gcc $(CFLAGS) -o banker $^
 
 %.o: %.c
 	gcc $(CFLAGS) -c $<
