@@ -56,6 +56,35 @@ void parse_args(int argc, char *argv[]) {
     }
 }
 
+int parse_customer_line(const char *line, int *out) {
+    const char *p = line;
+
+    for (int j = 0; j < n_resources; j++) {
+        char *end;
+        errno = 0;
+        long v = strtol(p, &end, 10);
+        if (end == p || errno == ERANGE || v < 0 || v > INT_MAX) {
+            return -1;
+        }
+        out[j] = (int)v;
+        p = end;
+
+        while(*p == ' ' || *p == '\t') {
+            p++;
+        }
+        if(j < n_resources - 1) {
+            if (*p != ',') return -1;
+            p++;
+        }
+    }
+
+    while(*p == ' ' || *p == '\t' || *p == '\r' || *p == '\n') {
+        p++;
+    }
+
+    return(*p == '\0') ? 0 : -1;
+}
+
 void load_customers(const char *path) {
     FILE *f = fopen(path, "r");
     if(!f) {
@@ -73,6 +102,12 @@ void load_customers(const char *path) {
             snprintf(msg, sizeof msg, "customer.txt: line %d is too long", count);
             perror(msg);
         }
+        if (parse_customer_line(line, tmp) != 0) {
+            snprintf(msg, sizeof msg,
+                     "customer.txt: line %d has invalid formatting (expected %d values separated by ',')",
+                     count, n_resources);
+            perror(msg);
+        }
     }
     if (count == 0) perror("customer.txt esta vazio");
 
@@ -82,8 +117,8 @@ void load_customers(const char *path) {
     need       = alloc_mat(n_customers, n_resources);
 
     rewind(f);
-
     for (int i = 0; i < n_customers && fgets(line, sizeof line, f); i++) {
+        parse_customer_line(line, maximum[i]);
         for (int j = 0; j < n_resources; j++)
             need[i][j] = maximum[i][j];
     }
