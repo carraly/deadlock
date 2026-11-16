@@ -394,6 +394,26 @@ void run_commands(const char *path, FILE *out) {
     fclose(f);
 }
 
+static void free_mat(int **mat, int n) {
+    if(!mat) {
+        return;
+    }
+    for(int i = 0; i < n; i++) {
+        free(mat[i]);
+    }
+    free(mat);
+}
+
+static void free_all(void) {
+    free(available);
+    free_mat(maximum, n_customers);
+    free_mat(allocation, n_customers);
+    free_mat(need, n_customers);
+
+    available = NULL;
+    maximum = allocation = need = NULL;
+}
+
 int main(int argc, char *argv[]) {
     parse_args(argc, argv);
     load_customers("customer.txt");
