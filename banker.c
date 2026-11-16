@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdarg.h>
 #include <errno.h>
 #include <limits.h>
 
@@ -12,10 +13,21 @@ int **maximum;
 int **allocation;
 int **need;
 
+static void die(const char *fmt, ...) {
+    va_list ap;
+
+    fprintf(stderr, "banker: ");
+    va_start(ap, fmt);
+    vfprintf(stderr, fmt, ap);
+    va_end(ap);
+    fputc('\n', stderr);
+    exit(EXIT_FAILURE);
+}
+
 int *alloc_vec(int m) {
     int *v = calloc(m, sizeof(int));
     if(!v) {
-        perror("failed allocating memory");
+        die("failed to allocate memory");
     }
     return v;
 }
@@ -23,7 +35,7 @@ int *alloc_vec(int m) {
 int **alloc_mat(int n, int m) {
     int **mat = malloc(n * sizeof(int *));
     if(!mat) {
-        perror("falha de alocacao de memoria");
+        die("failed to allocate memory");
     }
     for(int i = 0; i < n; i++) mat[i] = alloc_vec(m);
     return mat;
@@ -31,9 +43,9 @@ int **alloc_mat(int n, int m) {
 
 void parse_args(int argc, char *argv[]) {
     if(argc < 2) {
-        perror("expected at least 3 arguments");
+        die("usage: %s <instances> [<instances> ...]", argv[0]);
     }
-    
+
     n_resources = argc - 1;
     available = alloc_vec(n_resources);
 
@@ -43,13 +55,13 @@ void parse_args(int argc, char *argv[]) {
         long v = strtol(argv[j + 1], &end, 10);
 
         if(end == argv[j + 1] || *end != '\0') {
-            perror("expected a number");
+            die("resource %d: expected a number, got '%s'", j, argv[j + 1]);
         }
-        if(errno == ERANGE || v > INT_MAX) {
-            perror("argument is too big");
+        if(errno == ERANGE || v > INT_MAX || v < INT_MIN) {
+            die("resource %d: value out of range: '%s'", j, argv[j + 1]);
         }
         if(v < 0) {
-            perror("expected a non-negative number");
+            die("resource %d: expected a non-negative number, got '%s'", j, argv[j + 1]);
         }
 
         available[j] = (int)v;
@@ -88,11 +100,11 @@ int parse_customer_line(const char *line, int *out) {
 void load_customers(const char *path) {
     FILE *f = fopen(path, "r");
     if(!f) {
-        perror("unable to open customer.txt");
+        die("unable to open %s: %s", path, strerror(errno));
     }
 
     char line[1024];
-    char msg[128];
+    char msg[160];
     int *tmp = alloc_vec(n_resources);
     int count = 0;
 
@@ -100,16 +112,21 @@ void load_customers(const char *path) {
         count++;
         if (!strchr(line, '\n') && !feof(f)) {
             snprintf(msg, sizeof msg, "customer.txt: line %d is too long", count);
-            perror(msg);
+            die("%s", msg);
         }
         if (parse_customer_line(line, tmp) != 0) {
             snprintf(msg, sizeof msg,
                      "customer.txt: line %d has invalid formatting (expected %d values separated by ',')",
                      count, n_resources);
-            perror(msg);
+            die("%s", msg);
         }
     }
-    if (count == 0) perror("customer.txt is empty");
+    if (ferror(f)) {
+        die("error reading customer.txt: %s", strerror(errno));
+    }
+    if (count == 0) {
+        die("customer.txt is empty");
+    }
 
     n_customers = count;
     maximum    = alloc_mat(n_customers, n_resources);
@@ -118,7 +135,9 @@ void load_customers(const char *path) {
 
     rewind(f);
     for (int i = 0; i < n_customers && fgets(line, sizeof line, f); i++) {
-        parse_customer_line(line, maximum[i]);
+        if (parse_customer_line(line, maximum[i]) != 0) {
+            die("customer.txt: unexpected parsing error while loading data");
+        }
         for (int j = 0; j < n_resources; j++)
             need[i][j] = maximum[i][j];
     }
@@ -187,11 +206,11 @@ int parse_command(const char *line, char *op, int *cust, int *vals) {
 void validate_commands(const char *path) {
     FILE *f = fopen(path, "r");
     if(!f) {
-        perror("unable to open commands.txt");
+        die("unable to open %s: %s", path, strerror(errno));
     }
 
     char line[1024];
-    char msg[160];
+    char msg[200];
     int *vals = alloc_vec(n_resources);
     char op;
     int cust;
@@ -201,16 +220,21 @@ void validate_commands(const char *path) {
         count++;
         if (!strchr(line, '\n') && !feof(f)) {
             snprintf(msg, sizeof msg, "commands.txt: line %d is too long", count);
-            perror(msg);
+            die("%s", msg);
         }
         if (parse_command(line, &op, &cust, vals) != 0) {
             snprintf(msg, sizeof msg,
                      "commands.txt: line %d is invalid (expected: RQ|RL <cliente 0..%d> + %d values, or *)",
                      count, n_customers - 1, n_resources);
-            perror(msg);
+            die("%s", msg);
         }
     }
-    if (count == 0) perror("commands.txt is empty");
+    if (ferror(f)) {
+        die("error reading commands.txt: %s", strerror(errno));
+    }
+    if (count == 0) {
+        die("commands.txt is empty");
+    }
 
     free(vals);
     fclose(f);
@@ -335,7 +359,7 @@ static void print_state(FILE *out) {
     char *b = malloc(cap);
     char *c = malloc(cap);
     if (!a || !b || !c) {
-        perror("failed allocating memory");
+        die("failed to allocate memory");
     }
 
     int w1 = 10, w2 = 12;
@@ -369,7 +393,7 @@ static void print_state(FILE *out) {
 void run_commands(const char *path, FILE *out) {
     FILE *f = fopen(path, "r");
     if(!f) {
-        perror("unable to open commands.txt");
+        die("unable to open %s: %s", path, strerror(errno));
     }
 
     char line[1024];
@@ -379,7 +403,7 @@ void run_commands(const char *path, FILE *out) {
 
     while(fgets(line, sizeof line, f)) {
         if(parse_command(line, &op, &cust, vals) != 0)
-            perror("commands.txt has invalid format");
+            die("commands.txt has invalid format");
 
         if(op == 'Q') {
             request_resources(cust, vals, out);
@@ -388,6 +412,9 @@ void run_commands(const char *path, FILE *out) {
         }else{
             print_state(out);
         }
+    }
+    if (ferror(f)) {
+        die("error reading commands.txt: %s", strerror(errno));
     }
 
     free(vals);
@@ -421,12 +448,14 @@ int main(int argc, char *argv[]) {
 
     FILE *out = fopen("result.txt", "w");
     if(!out) {
-        perror("unable to create result.txt");
+        die("unable to create result.txt: %s", strerror(errno));
     }
 
     run_commands("commands.txt", out);
 
-    fclose(out);
+    if (fclose(out) != 0) {
+        die("error writing result.txt: %s", strerror(errno));
+    }
     free_all();
-    return 0;
+    return EXIT_SUCCESS;
 }
