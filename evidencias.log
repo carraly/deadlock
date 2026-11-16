@@ -1,0 +1,213 @@
+Script started on 2026-11-15 16:36:15-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="98" LINES="10"]
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [7mdate[27mdate
+[?2004lSun Nov 15 04:36:25 PM -03 2026
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [7mwhoami[27mwhoami
+[?2004lvictor
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m p[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [Cw[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [C[Cd
+[?2004l/home/victor/Projetos/deadlock
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m pwdwhoami[2Pdate[2Pls[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [C[Cgit clone https://github.com/carraly/deadlock.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd Projetos[Kls[K[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [C[C[9@cd Projeto[Cgit clone https://github.com/carraly/deadlock.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [C[Cdatewhoami[3Ppwd[K[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [7mscript -a evidencias.log[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cscript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m ls[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [C[Cgit clone https://github.com/carraly/deadlock.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd Projetos[Kls[K[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [C[Ccd[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [C[Cunxz /home/victor/Documentos/vchlm.tar.xz[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@gunzip[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake clean[Kscript -a evidencias.log[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor i in $(seq 1 100); do ./sync_car | tail -1; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[Kscript -a evidencias.log[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpwd[Kscript -a evidencias.log[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K[48@for i in $(seq 1 100); do ./sync_car | tail -1; don[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Script started on 2026-11-15 18:21:04-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="98" LINES="10"]
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m ls[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [C[Cgit clone https://github.com/carraly/deadlock.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd Projetos[Kls[K[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [C[Ccd[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [C[Cunxz /home/victor/Documentos/vchlm.tar.xz[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@gunzip[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake clean[Kscript -a evidencias.log[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor i in $(seq 1 100); do ./sync_car | tail -1; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[Kscript -a evidencias.log[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpwd[Kscript -a evidencias.log[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K[48@for i in $(seq 1 100); do ./sync_car | tail -1; don[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[28Pscript -a evidencias.log[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[14Pmake cleangunzip /home/victor/Documentos/vchlm.tar.xz[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Punxz[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd[K[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [C[Cls[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [C[C[9@cd Projeto[Cgit clone https://github.com/carraly/deadlock.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [C[C[K[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m ls[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [C[Cgit clone https://github.com/carraly/deadlock.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd Projetos[Kls[K[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [C[Ccd[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [C[Cunxz /home/victor/Documentos/vchlm.tar.xz[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@gunzip[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake clean[Kscript -a evidencias.log[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor i in $(seq 1 100); do ./sync_car | tail -1; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K[48@for i in $(seq 1 100); do ./sync_car | tail -1; don[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[28Pscript -a evidencias.log[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[14Pmake cleanscript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m m[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [Ca[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [C[Cek[K[K[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [C[Cke
+[?2004lgcc -Wall -g -c banker.c
+[01m[Kbanker.c:[m[K In funC[28Pscript -a evidencias.log[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[14Pmake cleangunzip /home/victor/Documentos/vchlm.tar.xz[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Punxz[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd[K[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [C[Cls[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [C[C[9@cd Projeto[Cgit clone https://github.com/carraly/deadlock.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [C[C[K[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m ls[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [C[Cgit clone https://github.com/carraly/deadlock.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd Projetos[Kls[K[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [C[Ccd[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [C[Cunxz /home/victor/Documentos/vchlm.tar.xz[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@gunzip[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake clean[Kscript -a evidencias.log[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor i in $(seq 1 100); do ./sync_car | tail -1; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K[48@for i in $(seq 1 100); do ./sync_car | tail -1; don[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[28Pscript -a evidencias.log[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[14Pmake cleanscript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m m[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [Ca[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [C[Cek[K[K[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [C[Cke
+[?2004lgcc -Wall -g -c banker.c
+[01m[Kbanker.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kbanker.c:410:5:[m[K [01;31m[Kerror: [m[Kimplicit declaration of function ‘[01m[Kfree_all[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+  410 |     [01;31m[Kfree_all[m[K();
+      |     [01;31m[K^~~~~~~~[m[K
+make: *** [Makefile:7: banker.o] Error 1
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m✗[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m✗[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m✗[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m✗[0m make[2Plsgit clone https://github.com/carraly/deadlock.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd Projetos[Kls[Kcdunxz /home/victor/Documentos/vchlm.tar.xz[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@gunzip[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake clean[Kscript -a evidencias.log[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor i in $(seq 1 100); do ./sync_car | tail -1; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[28Pscript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+]0;viScript started on 2026-11-15 19:41:08-03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="98" LINES="10"]
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m m[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [Ca[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [C[Cek[K[K[1;36mdeadlock[0m [3;36mmain[0m [36m ? [1m❯[0m [C[Cke
+[?2004lgcc -Wall -g -c banker.c
+[01m[Kbanker.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kbanker.c:410:5:[m[K [01;31m[Kerror: [m[Kimplicit declaration of function ‘[01m[Kfree_all[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+  410 |     [01;31m[Kfree_all[m[K();
+      |     [01;31m[K^~~~~~~~[m[K
+make: *** [Makefile:7: banker.o] Error 1
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m✗[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m✗[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m✗[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m✗[0m make[2Plsgit clone https://github.com/carraly/deadlock.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd Projetos[Kls[Kcdunxz /home/victor/Documentos/vchlm.tar.xz[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@gunzip[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake clean[Kscript -a evidencias.log[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor i in $(seq 1 100); do ./sync_car | tail -1; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[28Pscript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m make[K[K[K[K[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m lsgit clone https://github.com/carraly/deadlock.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd Projetos[Kls[Kcdunxz /home/victor/Documentos/vchlm.tar.xz[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@gunzip[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake clean[Kscript -a evidencias.log[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor i in $(seq 1 100); do ./sync_car | tail -1; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[28Pscript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m r[K[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m make
+[?2004lgcc -Wall -Wextra -g -c banker.c
+gcc -Wall -Wextra -g -o banker banker.o
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m run[K[K[K[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[ction ‘[01m[Kmain[m[K’:
+[01m[Kbanker.c:410:5:[m[K [01;31m[Kerror: [m[Kimplicit declaration of function ‘[01m[Kfree_all[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-16.2.0/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+  410 |     [01;31m[Kfree_all[m[K();
+      |     [01;31m[K^~~~~~~~[m[K
+make: *** [Makefile:7: banker.o] Error 1
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m✗[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m✗[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m✗[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m✗[0m make[2Plsgit clone https://github.com/carraly/deadlock.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd Projetos[Kls[Kcdunxz /home/victor/Documentos/vchlm.tar.xz[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@gunzip[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake clean[Kscript -a evidencias.log[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor i in $(seq 1 100); do ./sync_car | tail -1; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[28Pscript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m make[K[K[K[K[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m lsgit clone https://github.com/carraly/deadlock.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd Projetos[Kls[Kcdunxz /home/victor/Documentos/vchlm.tar.xz[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@gunzip[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake clean[Kscript -a evidencias.log[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor i in $(seq 1 100); do ./sync_car | tail -1; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[28Pscript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m r[K[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m make
+[?2004lgcc -Wall -Wextra -g -c banker.c
+gcc -Wall -Wextra -g -o banker banker.o
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m run[K[K[K[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m ./banker 10 5 7
+[?2004l]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m funciona
+[?2004lbash: command not found: funciona
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m✗[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m✗[0m 3[K[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m✗[0m make clean
+[?2004lrm -Script started on 2026-11-15 20:55:32-03:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="98" LINES="10"]
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m make[K[K[K[K[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m lsgit clone https://github.com/carraly/deadlock.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd Projetos[Kls[Kcdunxz /home/victor/Documentos/vchlm.tar.xz[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@gunzip[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake clean[Kscript -a evidencias.log[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor i in $(seq 1 100); do ./sync_car | tail -1; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[28Pscript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m r[K[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m make
+[?2004lgcc -Wall -Wextra -g -c banker.c
+gcc -Wall -Wextra -g -o banker banker.o
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m run[K[K[K[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m ./banker 10 5 7
+[?2004l]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m funciona
+[?2004lbash: command not found: funciona
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m✗[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m✗[0m 3[K[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m✗[0m make clean
+[?2004lrm -f *.o banker
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m make
+[?2004lgcc -Wall -Wextra -g -c banker.c
+gcc -Wall -Wextra -g -o banker banker.o
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m make clean[2Pfunciona./banker 10 5 7make[K[2Plsgit clone https://github.com/carraly/deadlock.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd Projetos[Kls[Kcdunxz /home/victor/Documentos/vchlm.tar.xz[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@gunzip[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake clean[Kscript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m make cel[K[Klean
+[?2004lrm -f *.o banker
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0mctor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m make[K[K[K[K[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m lsgit clone https://github.com/carraly/deadlock.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd Projetos[Kls[Kcdunxz /home/victor/Documentos/vchlm.tar.xz[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@gunzip[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake clean[Kscript -a evidencias.log[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor i in $(seq 1 100); do ./sync_car | tail -1; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[28Pscript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m r[K[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m make
+[?2004lgcc -Wall -Wextra -g -c banker.c
+gcc -Wall -Wextra -g -o banker banker.o
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m run[K[K[K[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m ./banker 10 5 7
+[?2004l]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m funciona
+[?2004lbash: command not found: funciona
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m✗[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m✗[0m 3[K[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m✗[0m make clean
+[?2004lrm -f *.o banker
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m make
+[?2004lgcc -Wall -Wextra -g -c banker.c
+gcc -Wall -Wextra -g -o banker banker.o
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m make clean[2Pfunciona./banker 10 5 7make[K[2Plsgit clone https://github.com/carraly/deadlock.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd Projetos[Kls[Kcdunxz /home/victor/Documentos/vchlm.tar.xz[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@gunzip[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake clean[Kscript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m make cel[K[Klean
+[?2004lrm -f *.o banker
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m make
+[?2004lgcc -WalScript started on 2026-11-15 21:45:51-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="98" LINES="10"]
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m r[K[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m make
+[?2004lgcc -Wall -Wextra -g -c banker.c
+gcc -Wall -Wextra -g -o banker banker.o
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m run[K[K[K[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m ./banker 10 5 7
+[?2004l]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m funciona
+[?2004lbash: command not found: funciona
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m✗[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m✗[0m 3[K[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m✗[0m make clean
+[?2004lrm -f *.o banker
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m make
+[?2004lgcc -Wall -Wextra -g -c banker.c
+gcc -Wall -Wextra -g -o banker banker.o
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m make clean[2Pfunciona./banker 10 5 7make[K[2Plsgit clone https://github.com/carraly/deadlock.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd Projetos[Kls[Kcdunxz /home/victor/Documentos/vchlm.tar.xz[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@gunzip[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake clean[Kscript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m make cel[K[Klean
+[?2004lrm -f *.o banker
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m make
+[?2004lgcc -Wall -Wextra -g -c banker.c
+gcc -Wall -Wextra -g -o banker banker.o
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m ^?[K[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [7m./tests/run_tests.sh[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./tests/run_tests.sh
+[?2004lPASS sample                 exit=0
+PASS noargs                 exit=1
+PASS nonnumeric             exit=1
+PASS negative               exit=1
+PASS overflow               exit=1
+PASS fewresources           exit=1
+PASS manyresources          exit=1
+PASS missingcustomer        exit=1
+PASS missingcommands        exit=1
+PASS emptycustomer          exit=1
+PASS emptycommands          exit=1
+PASS badcustomer            exit=1
+PASS trailingcomma          exit=1
+PASS badcommand             exit=1
+PASS badcustomerid          exit=1
+PASS extrafields            exit=1
+PASS badrelease             exit=0
+
+17 passed, 0 failed
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmaScript started on 2026-11-15 23:14:36-03:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="98" LINES="10"]
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m make cel[K[Klean
+[?2004lrm -f *.o banker
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m make
+[?2004lgcc -Wall -Wextra -g -c banker.c
+gcc -Wall -Wextra -g -o banker banker.o
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m ^?[K[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [7m./tests/run_tests.sh[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./tests/run_tests.sh
+[?2004lPASS sample                 exit=0
+PASS noargs                 exit=1
+PASS nonnumeric             exit=1
+PASS negative               exit=1
+PASS overflow               exit=1
+PASS fewresources           exit=1
+PASS manyresources          exit=1
+PASS missingcustomer        exit=1
+PASS missingcommands        exit=1
+PASS emptycustomer          exit=1
+PASS emptycommands          exit=1
+PASS badcustomer            exit=1
+PASS trailingcomma          exit=1
+PASS badcommand             exit=1
+PASS badcustomerid          exit=1
+PASS extrafields            exit=1
+PASS badrelease             exit=0
+
+17 passed, 0 failed
+]0;victor@galaxy-cachyos:~/Projetos/deadlock[?2004h
+[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [K[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [K[1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m [1;36mdeadlock[0m [3;36mmain[0m [36m? [1m❯[0m exit
+[?2004lexit
+
+Script done on 2026-11-15 23:21:30-03:00 [COMMAND_EXIT_CODE="0"]

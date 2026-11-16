@@ -24,8 +24,8 @@ make clean
 - **Requisição (RQ)**: a requisição é negada se exceder need ou available. Caso contrário, os recursos são alocados temporariamente e o estado é testado; se ficar inseguro, a alocação é desfeita.
 - **Liberação (RL)**: a liberação é negada se exceder allocation; caso contrário, available aumenta, allocation diminui e need aumenta na mesma proporção.
 - **Verificação de segurança**: o algoritmo de Work/Finish simula a finalização dos clientes cuja need cabe em work, somando allocation a work. O estado é seguro se todos os clientes terminarem.
-- **Comando ***: imprime MAXIMUM, ALLOCATION, NEED e AVAILABLE no estado atual.
-- **Validação**: customer.txt e commands.txt são completamente validados antes de qualquer processamento. Em qualquer erro, o programa imprime uma mensagem banker: ... em stderr, encerra com código de falha e não gera result.txt parcial.
+- **Comando asterisco**: imprime MAXIMUM, ALLOCATION, NEED e AVAILABLE no estado atual.
+- **Validação**: customer.txt e commands.txt são completamente validados antes de qualquer processamento. Em qualquer erro de validação, o programa imprime uma mensagem banker: ... em stderr, encerra com código de falha e não cria result.txt.
 
 ## Estrutura do código
 

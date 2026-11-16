@@ -116,7 +116,7 @@ void load_customers(const char *path) {
         }
         if (parse_customer_line(line, tmp) != 0) {
             snprintf(msg, sizeof msg,
-                     "customer.txt: line %d has invalid formatting (expected %d values separated by ',')",
+                     "customer.txt: line %d is invalid: expected %d resource values (one per command-line argument), separated by ','",
                      count, n_resources);
             die("%s", msg);
         }
@@ -224,7 +224,7 @@ void validate_commands(const char *path) {
         }
         if (parse_command(line, &op, &cust, vals) != 0) {
             snprintf(msg, sizeof msg,
-                     "commands.txt: line %d is invalid (expected: RQ|RL <cliente 0..%d> + %d values, or *)",
+                     "commands.txt: line %d is invalid (expected: RQ|RL <customer 0..%d> + %d resource values, or *)",
                      count, n_customers - 1, n_resources);
             die("%s", msg);
         }
@@ -246,7 +246,7 @@ void print_vec(FILE *out, const int *v) {
     }
 }
 
-// Retorna 1 se existir alguma posição j com a[j] > b[j]
+// Returns 1 if there is any position j with a[j] > b[j]
 int any_greater(const int *a, const int *b) {
     for(int j = 0; j < n_resources; j++) {
         if (a[j] > b[j]) {
